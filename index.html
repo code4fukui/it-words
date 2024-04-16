@@ -22,6 +22,7 @@ app: MIT <a href=https://github.com/code4fukui/ipsj-words>src on GitHub</a> (<a 
 import { CSV } from "https://js.sabae.cc/CSV.js";
 import { Pinyin } from "https://code4fukui.github.io/Pinyin/Pinyin.js";
 import { IndexedCache } from "https://code4fukui.github.io/IndexedCache/IndexedCache.js";
+//import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
 
 intext.disabled = true;
 intext.value = "loading...";
@@ -30,8 +31,16 @@ const cache = await IndexedCache.create(fn, 1);
 const bin = await cache.fetchOrLoad(fn);
 const data0 = CSV.parse(new TextDecoder().decode(bin));
 
-const data = data0.filter(i => i.説明);
-console.log(data.length);
+const data = [];
+for (const d of data0) {
+  if (!d.説明) continue;
+  if (data.find(i => i.用語 == d.用語)) continue;
+  data.push(d);
+}
+//data0.filter(i => i.説明);
+//const data2 = ArrayUtil.toUnique(data.map(i => i.用語));
+//console.log(data2.length, "/", data.length, "/", data0.length);
+console.log(data.length, "/", data0.length);
 //console.log(data);
 data.forEach(i => i.key = (i.用語 + i.説明).toUpperCase());
 
