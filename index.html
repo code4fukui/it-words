@@ -2,16 +2,19 @@
 <link rel="icon" href="./icon.png">
 <link rel="apple-touch-icon" href="./icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>じょーほーよーご - 情報科全教科書用語リスト</title>
+<title>IT辞書 - 情報科全教科書用語リスト</title>
 <body>
 <div id=divin>
-<input type=text id=intext><a href=#credit>情報科全教科書用語</a>
+<input type=text id=intext><span class=title>IT辞書</span>
 </div>
 <div id=divresult></div>
+<div id=btnc>
+<button id=btnrnd>ランダム</button>
+</div>
 
 <footer>
 <a id=credit></a>
-<h1>じょーほーよーご</h1>
+<h1>IT辞書</h1>
 DATA: CC 4.0 BY-SA <a href=https://sites.google.com/a.ipsj.or.jp/ipsjjn/wordlist>情報処理学会 情報入試委員会 - 情報科全教科書用語リスト</a><br>
 forked from: <a href=https://github.com/code4fukui/MJdic>MJ典</a>, <a href=https://github.com/code4fukui/CEdic>CE典</a><br>
 app: MIT <a href=https://github.com/code4fukui/ipsj-words>src on GitHub</a> (<a href=https://fukuno.jig.jp/>blog 一日一創</a>)<br>
@@ -23,6 +26,7 @@ import { CSV } from "https://js.sabae.cc/CSV.js";
 import { Pinyin } from "https://code4fukui.github.io/Pinyin/Pinyin.js";
 import { IndexedCache } from "https://code4fukui.github.io/IndexedCache/IndexedCache.js";
 //import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
+import { rnd } from "https://js.sabae.cc/rnd.js";
 
 intext.disabled = true;
 intext.value = "loading...";
@@ -44,6 +48,14 @@ for (const d of data0) {
   })) continue;
   data.push(d);
 }
+
+console.log(data);
+const keys0 = [];
+for (const d of data) {
+  d.用語.split("|").forEach(i => keys0.push(i));
+}
+const keys = keys0.sort((a, b) => b.length - a.length);
+console.log("keys.length", keys, keys.length);
 //data0.filter(i => i.説明);
 //const data2 = ArrayUtil.toUnique(data.map(i => i.用語));
 //console.log(data2.length, "/", data.length, "/", data0.length);
@@ -72,9 +84,35 @@ const cr = (tag, parent) => {
 };
 
 const setWithLink = (div, s) => {
-  div.appendChild(document.createTextNode(s));
+  const ss = [];
+  let n = 0;
+  for (;;) {
+    let keyhit = null;
+    let nhit = s.length;
+    for (let i = 0; i < keys.length; i++) {
+      const key = keys[i];
+      const m = s.indexOf(key, n);
+      if (m >= 0 && m < nhit) {
+        keyhit = key;
+        nhit = m;
+      }
+    }
+    if (!keyhit) {
+      div.appendChild(document.createTextNode(s.substring(n)));
+      break;
+    }
+    div.appendChild(document.createTextNode(s.substring(n, nhit)));
+    // link
+    const span = cr("span", div);
+    span.textContent = keyhit;
+    span.className = "keyword";
+    span.onclick = () => {
+      intext.value = keyhit;
+      intext.oninput();
+    };
+    n = nhit + keyhit.length;
+  }
 };
-
 const list2htmlBlock = (div, data) => {
   const tbl = cr("table");
   for (const d of data) {
@@ -90,7 +128,8 @@ const list2htmlBlock = (div, data) => {
     */
     const td1 = cr("td", tr);
     td1.className = "means";
-    setWithLink(td1, d.用語.replace(/\|/g, "、"));
+    //setWithLink(td1, d.用語.replace(/\|/g, "、"));
+    td1.textContent = d.用語.replace(/\|/g, "、");
     set(cr("td", tr), "説明");
     /*
     const tr2 = cr("tr", tbl);
@@ -125,24 +164,14 @@ intext.oninput = () => {
   }
   */
   const val = (i) => {
-    /*
-    let pnt = i.means.indexOf("variant of ") >= 0 ? 0 : 1;
-    if (i.kanji == key || i.kanji_s == key) {
-      pnt += 8;
-    } else if (i.kanji.startsWith(key) || i.kanji_s.startsWith(key)) {
-      pnt += 6;
-    } else if (i.kanji.indexOf(key) >= 0 || i.kanji_s.indexOf(key) >= 0) {
-      pnt += 4;
-    } else {
-      pnt += 2;
-    }
-    pnt += 1 - i.kanji.length / 10;
-    return pnt;
-    */
-    // カテゴリ, 用語, 説明
-    return -(i.用語.length * 100000 + i.用語.charCodeAt(0));
+    let pnt = 0;
+    const keys = i.用語.split("|");
+    if (keys.indexOf(key) >= 0) return 0;
+    const n = i.用語.charCodeAt(0) + 100000 * i.用語.length;
+    if (i.用語.indexOf(key) >= 0) return -1 + n;
+    return 1000000 + n;
   };
-  data2.sort((a, b) => val(b) - val(a));
+  data2.sort((a, b) => val(a) - val(b));
   const flgmore = data2.length > maxcnt;
   if (flgmore) {
     data2.length = maxcnt;
@@ -156,18 +185,34 @@ intext.oninput = () => {
   document.location.hash = encodeURIComponent(key);
 };
 
-intext.value = decodeURIComponent(document.location.hash.substring(1)) || "公開鍵";
-intext.oninput();
+onhashchange = () => {
+  intext.value = decodeURIComponent(document.location.hash.substring(1)) || "公開鍵";
+  intext.oninput();
+};
+onhashchange();
+
+btnrnd.onclick = () => {
+  const key = keys[rnd(keys.length)];
+  intext.value = key;
+  intext.oninput();
+};
 </script>
 
 <style>
+:root {
+  --main-bg-color: #f1e1c6;
+}
 body {
   font-family: sans-serif;
   margin: 0;
   padding-bottom: 50vh;
 }
+.title {
+  font-weight: bold;
+  padding: 0 .2em;
+}
 #divin {
-  background-color: #f1e1c6;
+  background-color: var(--main-bg-color);
   color: black;
   padding: .5em;
   top: 0;
@@ -199,17 +244,15 @@ th, td {
   border: 1px solid black;
   padding: .2em .3em;
 }
-.kanji, .kanji_s {
-  width: 3em;
-}
-.kanji, .kanji_s, .pron {
-  text-align: center;
+.keyword {
+  font-weight: bold;
 }
 .means {
-  font-size: 90%;
+  x-font-size: 90%;
+  font-weight: bold;
 }
 footer {
-  background-color: #f1e1c6;
+  background-color: var(--main-bg-color);
   color: black;
   padding: 1em;
 }
@@ -218,6 +261,17 @@ a {
 }
 h1 {
   font-size: 130%;
+}
+#btnc {
+  text-align: center;
+}
+#btnrnd {
+  font-weight: bold;
+  padding: 1em;
+  margin: .5em 0 1.5em 0;
+  border-radius: 1em;
+  background-color: var(--main-bg-color);
+  border: none;
 }
 </style>
 </body>
