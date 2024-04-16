@@ -34,7 +34,14 @@ const data0 = CSV.parse(new TextDecoder().decode(bin));
 const data = [];
 for (const d of data0) {
   if (!d.説明) continue;
-  if (data.find(i => i.用語 == d.用語)) continue;
+  if (data.find(i => {
+    if (i.用語 != d.用語) return false;
+    if (i.説明 != d.説明) {
+      //console.log(d.用語, d.説明);
+      return false;
+    }
+    return true;
+  })) continue;
   data.push(d);
 }
 //data0.filter(i => i.説明);
@@ -133,7 +140,7 @@ intext.oninput = () => {
     return pnt;
     */
     // カテゴリ, 用語, 説明
-    return -i.用語.length;
+    return -(i.用語.length * 100000 + i.用語.charCodeAt(0));
   };
   data2.sort((a, b) => val(b) - val(a));
   const flgmore = data2.length > maxcnt;
