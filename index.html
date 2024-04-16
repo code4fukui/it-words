@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<link rel="icon" href="./icon.png">
+<link rel="apple-touch-icon" href="./icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>じょーほーよーご - 情報科全教科書用語リスト</title>
+<body>
+<div id=divin>
+<input type=text id=intext><a href=#credit>情報科全教科書用語</a>
+</div>
+<div id=divresult></div>
+
+<footer>
+<a id=credit></a>
+<h1>じょーほーよーご</h1>
+DATA: CC 4.0 BY-SA <a href=https://sites.google.com/a.ipsj.or.jp/ipsjjn/wordlist>情報処理学会 情報入試委員会 - 情報科全教科書用語リスト</a><br>
+forked from: <a href=https://github.com/code4fukui/MJdic>MJ典</a>, <a href=https://github.com/code4fukui/CEdic>CE典</a><br>
+app: MIT <a href=https://github.com/code4fukui/ipsj-words>src on GitHub</a> (<a href=https://fukuno.jig.jp/>blog 一日一創</a>)<br>
+</footer>
+
+
+<script type="module">
+import { CSV } from "https://js.sabae.cc/CSV.js";
+import { Pinyin } from "https://code4fukui.github.io/Pinyin/Pinyin.js";
+import { IndexedCache } from "https://code4fukui.github.io/IndexedCache/IndexedCache.js";
+
+intext.disabled = true;
+intext.value = "loading...";
+const fn = "ipsj-words-ver.1.0_2024-4-10.csv";
+const cache = await IndexedCache.create(fn, 1);
+const bin = await cache.fetchOrLoad(fn);
+const data = CSV.parse(new TextDecoder().decode(bin));
+
+//console.log(data);
+data.forEach(i => i.key = (i.用語 + i.説明).toUpperCase());
+
+intext.disabled = false;
+intext.value = "";
+
+const renderListSimple = (div, data2) => {
+  div.innerHTML = data2.map(i => {
+    const res = [];
+    for (const name in i) {
+      res.push(`${name}: ${i[name]}`);
+    }
+    return res.join("<br>\n");
+  }).join("<hr>");
+};
+
+const cr = (tag, parent) => {
+  const res = document.createElement(tag);
+  if (parent) parent.appendChild(res);
+  return res;
+};
+
+const setWithLink = (div, s) => {
+  div.appendChild(document.createTextNode(s));
+};
+
+const list2htmlBlock = (div, data) => {
+  const tbl = cr("table");
+  for (const d of data) {
+    const set = (td, name) => {
+      setWithLink(td, d[name]);
+      td.className = name;
+      return td;
+    };
+    const tr = cr("tr", tbl);
+    /*
+    set(cr("th", tr), "kanji");
+    set(cr("td", tr), "kanji_s");
+    */
+    const td1 = cr("td", tr);
+    td1.className = "means";
+    setWithLink(td1, d.用語.replace(/\|/g, "、"));
+    set(cr("td", tr), "説明");
+    /*
+    const tr2 = cr("tr", tbl);
+    const tdp = cr("td", tr2);
+    //set(tdp, "pron").setAttribute("colspan", 2);
+    //tdp.onclick = () => speech(d.kanji);
+    */
+  }
+  div.innerHTML = "";
+  div.appendChild(tbl);
+};
+
+const maxcnt = 100;
+
+intext.oninput = () => {
+  const key = intext.value.trim();
+  if (key.length == 0) return;
+  const keyu = key.toUpperCase();
+  const data2 = data.filter(d => {
+    for (const name in d) {
+      if (d.key.indexOf(keyu) >= 0) {
+        return true;
+      }
+    }
+  });
+  /*
+  if (data2.length == 0) {
+    if (key.length == 0) return;
+    intext.value = key.substring(0, key.length - 1);
+    intext.oninput();
+    return;
+  }
+  */
+  const val = (i) => {
+    /*
+    let pnt = i.means.indexOf("variant of ") >= 0 ? 0 : 1;
+    if (i.kanji == key || i.kanji_s == key) {
+      pnt += 8;
+    } else if (i.kanji.startsWith(key) || i.kanji_s.startsWith(key)) {
+      pnt += 6;
+    } else if (i.kanji.indexOf(key) >= 0 || i.kanji_s.indexOf(key) >= 0) {
+      pnt += 4;
+    } else {
+      pnt += 2;
+    }
+    pnt += 1 - i.kanji.length / 10;
+    return pnt;
+    */
+    // カテゴリ, 用語, 説明
+    return -i.用語.length;
+  };
+  data2.sort((a, b) => val(b) - val(a));
+  const flgmore = data2.length > maxcnt;
+  if (flgmore) {
+    data2.length = maxcnt;
+  }
+  //renderListSimple(divresult, data2);
+  list2htmlBlock(divresult, data2);
+  if (flgmore) {
+    divresult.appendChild(document.createTextNode("and more..."));
+  }
+  scrollTo(0, 0);
+  document.location.hash = encodeURIComponent(key);
+};
+
+intext.value = decodeURIComponent(document.location.hash.substring(1)) || "公開鍵";
+intext.oninput();
+</script>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding-bottom: 50vh;
+}
+#divin {
+  background-color: gray;
+  padding: .5em;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+}
+#divin a {
+  margin: .5em;
+  color: white !important;
+  font-weight: bold;
+  font-size: 130%;
+  text-decoration: none;
+}
+#divresult {
+  margin: .5em;
+  padding-top: 3.5em;
+}
+input {
+  font-size: 140%;
+  width: 70vw;
+  max-width: 10em;
+  padding: .2em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: .2em .3em;
+}
+.kanji, .kanji_s {
+  width: 3em;
+}
+.kanji, .kanji_s, .pron {
+  text-align: center;
+}
+.means {
+  font-size: 90%;
+}
+footer {
+  background-color: gray;
+  color: white;
+  padding: 1em;
+}
+a {
+  color: white !important;
+}
+h1 {
+  font-size: 130%;
+}
+</style>
+</body>
+</html>

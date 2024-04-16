@@ -1,0 +1,2 @@
+# ipsj-words
+ 
