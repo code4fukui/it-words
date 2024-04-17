@@ -4,7 +4,7 @@
 
 ## サンプルアプリ
 
-- [じょーほーよーご](https://code4fukui.github.io/ipsj-words/)
+- [IT辞書](https://code4fukui.github.io/ipsj-words/)
 
 ## 出典
 
