@@ -35,6 +35,8 @@ const cache = await IndexedCache.create(fn, 1);
 const bin = await cache.fetchOrLoad(fn);
 const data0 = CSV.parse(new TextDecoder().decode(bin));
 
+const data = data0;
+/*
 const data = [];
 for (const d of data0) {
   if (!d.説明) continue;
@@ -42,12 +44,14 @@ for (const d of data0) {
     if (i.用語 != d.用語) return false;
     if (i.説明 != d.説明) {
       //console.log(d.用語, d.説明);
+      console.log(d.用語);
       return false;
     }
     return true;
   })) continue;
   data.push(d);
 }
+*/
 
 console.log(data);
 const keys0 = [];
@@ -168,8 +172,9 @@ intext.oninput = () => {
     const keys = i.用語.split("|");
     if (keys.indexOf(key) >= 0) return 0;
     const n = i.用語.charCodeAt(0) + 100000 * i.用語.length;
+    if (!i.説明) return 100000 * 10000 + n;
     if (i.用語.indexOf(key) >= 0) return -1 + n;
-    return 1000000 + n;
+    return 100000 * 100 + n;
   };
   data2.sort((a, b) => val(a) - val(b));
   const flgmore = data2.length > maxcnt;
