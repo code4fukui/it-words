@@ -1,11 +1,11 @@
-# ipsj-words
+# it-words
 
-- [ipsj-words-ver.1.0_2024-4-10.csv](ipsj-words-ver.1.0_2024-4-10.csv)
+- [it-words.csv](it-words.txt)
 
 ## サンプルアプリ
 
-- [IT辞書](https://code4fukui.github.io/ipsj-words/)
+- [IT辞書](https://code4fukui.github.io/it-words/)
 
 ## 出典
 
-- CC 4.0 BY-SA [情報処理学会 情報入試委員会 - 情報科全教科書用語リスト](https://sites.google.com/a.ipsj.or.jp/ipsjjn/wordlist)
+- [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) [さくらのクラウド検定オンライン教材](https://github.com/code4fukui/SakuraCloudCertificationStudyMaterial) さくらインターネット株式会社制作のスライド（1〜3）より
