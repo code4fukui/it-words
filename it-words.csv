@@ -36,7 +36,7 @@ AND回路,二つの入力が両方とも1のときのみ1を出力する回路,�
 プログラミング言語,ソフトウェア開発者が必要とするプログラミング・ツールを提供,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
 ミドルウェア,システム・ソフトウェアとアプリケーションの間に位置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
 ドライバ・ソフトウェア,コンピュータ・デバイスや周辺機器を操作,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
-OSS（Open Source Software）,ソースコードが公開されており、誰でも自由に閲覧、変更、配布することができるソフトウェア 例：Linux, Firefox, MySQLなど,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+OSS（Open Source Software）,"ソースコードが公開されており、誰でも自由に閲覧、変更、配布することができるソフトウェア 例：Linux, Firefox, MySQLなど",さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
 サーバ,データ（コンテンツ）やサービスを提供するコンピュータやソフトウェア,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
 Webサーバ,クライアント（通常はウェブブラウザ）からの要求に応じて、静的な文書や画像などのホームページのデータを返す。ユーザーと直接やりとりする。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
 AP(アプリケーション)サーバ,Webサーバから受けた要求をもとに、データベースサーバからデータの読み書きを行ったり、データの整合性を保ったりなど、プログラムとしての処理を行う。主にWebサーバとデータベースサーバの間に位置する。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
