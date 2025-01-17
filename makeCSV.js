@@ -1,32 +1,22 @@
 import { CSV } from "https://js.sabae.cc/CSV.js";
+import "./makeSakuraCSV.js";
 
-const data = (await Deno.readTextFile("./src.txt")).split("\n");
+const dstfn = "it-words.csv";
 
-const srcbase = "https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/";
-const srcs = {
-  "1.1": "1.1_Cloud.pdf",
-  "1.2": "1.2_Computer.pdf",
-  "1.3": "1.3_Network.pdf",
-};
+const srcs = [
+  { url: "sakura-it-words.csv" },
+  { url: "https://ichigojam.github.io/doc/IchigoJam-words.csv", src_title: "IchigoJam用語集", src_url: "https://github.com/IchigoJam/doc/blob/master/IchigoJam-words.csv" },
+];
 
-const list = [["word", "description", "src_title", "src_url"]];
-let src = null;
-for (const s of data) {
-  if (s.length == 0) continue;
-  const n = s.indexOf(",");
-  if (n < 0) {
-    for (const name in srcs) {
-      if (s.startsWith(name)) {
-        src = srcbase + srcs[name];
-        break;
-      }
-    }
-    console.log("src", src, "<-", s);
-    continue;
+const list = [];
+for (const src of srcs) {
+  const list2 = await CSV.fetchJSON(src.url);
+  if (src.src_title) {
+    list2.forEach(i => {
+      i.src_title = src.src_title;
+      i.src_url = src.src_url;
+    });
   }
-  const ss = [s.substring(0, n), s.substring(n + 1)];
-  ss.push("さくらのクラウド検定オンライン教材");
-  ss.push(src);
-  list.push(ss);
+  list2.forEach(i => list.push(i));
 }
-await Deno.writeTextFile("it-words.csv", CSV.encode(list));
+await Deno.writeTextFile(dstfn, CSV.stringify(list));

@@ -1,0 +1,113 @@
+﻿word,description,src_title,src_url
+クラウド,共用の構成可能なコンピューティングリソース（ネットワーク、サーバー、ストレージ、アプリケーション、サービス）の集積に、どこからでも、簡便に、必要に応じて、ネットワーク経由でアクセスすることを可能とするモデルであり、最小限の利用手続きまたはサービスプロバイダとのやりとりで速やかに割当てられ提供されるものである,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+SaaS(Software as a Service),アプリケーションをインターネット上で利用するサービス形態（例：Microsoft 365、Dropbox、iCloud など）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+PaaS(Platform as a Service),開発・実行環境をネットワーク越しに提供するクラウドサービス（例：サイボウズ社の Kintone、Salesforce 社の Heroku など）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+IaaS(Infrastructure as a Service),インフラまでをネットワーク経由で提供するサービス形態（例：AWS、Microsoft Azure、Google Cloud、さくらのクラウド など）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+クラウド,ネットワーク経由で、計算資源等を利用する,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+オンプレミス,計算資源を使用者(企業)が自分で保有・管理する,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+パブリッククラウド,複数の企業、利用者が同じクラウド上の計算資源を共有,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+プライベートクラウド,独自環境を構築して環境を占有,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+ハイブリッドクラウド,複数の環境を組み合わせ、連携させて運用,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+ベアメタルクラウド,提供される物理サーバをクラウドのように利用,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.1_Cloud.pdf
+コンピュータ,与えられた手順（プログラム）に従って複雑な処理や計算を自動的に、かつ高速に行う機械のこと,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ハードウェア,コンピュータや電子機器の物理的な部品や装置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+制御装置（CU、Control Unit）,コンピュータの他の部分が何をすべきかを指示を出す装置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+演算装置（ALU、Arithmetic Logic Unit）,数字の足し算や引き算などの計算を行う装置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+記憶装置,データを保存する装置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+入力装置,コンピュータへデータや指令を送るために使用される装置（例：キーボード、マウス、タッチスクリーン、スキャナー、ウェブカメラ）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+出力装置,コンピュータが処理したデータや情報を出力する装置（例：モニター、プリンター、スピーカー、プロジェクター）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+入出力装置（I/O デバイス）,入力と出力の両方の機能を持つ装置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+GPU,Graphics Processing Unitの略で主に画像処理とビデオレンダリングを高速化するために設計されたコンピュータハードウェアの装置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+コンピュータの演算,私たちが日常で行う計算と同じように、数値を扱って様々な問題を解決するプロセスのこと,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+論理回路,コンピュータが情報を処理するための基本的な構成要素,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+AND回路,二つの入力が両方とも1のときのみ1を出力する回路,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+パーソナルコンピュータ（PC）,デスクトップコンピュータやラップトップ（ノートパソコン）などの個人が使用するためのコンピュータ（用途に基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+サーバ,ネットワーク上の他のコンピュータにデータやサービスを提供するために設計されたコンピュータ（用途に基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+組み込みシステム,特定のタスクを実行するために特化したコンピュータで、自動車、家電製品、産業機械などに組み込まれているコンピュータ（用途に基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+スーパーコンピュータ,高度な計算処理が必要な科学技術計算や大規模なデータ分析のために使用される非常に高性能なコンピュータ（用途に基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+マイクロコンピュータ,単一のICチップ上に CPU、メモリ、I/Oポートなどの基本的な構成要素が集積された小型のコンピュータシステム（サイズに基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ミニコンピュータ,中小規模のビジネスや科学技術計算に使われる中程度のサイズと処理能力を持つコンピュータ（サイズに基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+メインフレーム,大規模なビジネス処理やデータ管理に適した大型のコンピュータ。銀行や保険会社などで利用される（サイズに基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+汎用コンピュータ,様々なタスクをこなすことができる柔軟性を持ったコンピュータ。ほとんどのパーソナルコンピュータやサーバがこれに該当（処理能力に基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+特化型コンピュータ,特定の用途やタスクに特化して設計されたコンピュータ。組み込みシステムやゲームコンソールなどがこれに含まれる（処理能力に基づく分類）,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ソフトウェア,コンピュータに指示を与えて特定のタスクを実行させるためのプログラムや命令の集まり,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+アプリケーション・ソフトウェア（アプリ）,ユーザーが特定の作業を行うために使用するソフトウェア,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+基本ソフトウェア,コンピュータの基本的な機能を管理し、ハードウェアとアプリケーションソフトウェアの間のインターフェースを提供,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+プログラミング言語,ソフトウェア開発者が必要とするプログラミング・ツールを提供,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ミドルウェア,システム・ソフトウェアとアプリケーションの間に位置,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ドライバ・ソフトウェア,コンピュータ・デバイスや周辺機器を操作,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+OSS（Open Source Software）,"ソースコードが公開されており、誰でも自由に閲覧、変更、配布することができるソフトウェア 例：Linux, Firefox, MySQLなど",さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+サーバ,データ（コンテンツ）やサービスを提供するコンピュータやソフトウェア,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+Webサーバ,クライアント（通常はウェブブラウザ）からの要求に応じて、静的な文書や画像などのホームページのデータを返す。ユーザーと直接やりとりする。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+AP(アプリケーション)サーバ,Webサーバから受けた要求をもとに、データベースサーバからデータの読み書きを行ったり、データの整合性を保ったりなど、プログラムとしての処理を行う。主にWebサーバとデータベースサーバの間に位置する。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+DB（データベース）サーバ,データを効率的に管理、格納、検索する。APサーバからの要求に応じてデータを処理する方式を取ることで、データまではAPサーバを介さなければならないようになっていることが多い。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+プロキシサーバ,クライアントと目的とするサーバとの間に位置し、クライアントとサーバとを中継する。セキュリティ強化やサーバの代わりに要求に応じるなどの役割。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+DNS（Domain Name System）サーバ,ドメイン名とIPアドレスとを相互に変換する。クライアントがドメイン名でリクエストをすると、DNSサーバが対応するIPアドレスを返す。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+DHCP（Dynamic Host Configuration Protocol）サーバ,ネットワーク上のデバイスに自動的にIPアドレスを割り当てる役割を持つ。デバイスはネットワークに接続するための設定を自動的に受け取る。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+FTP（File Transfer Protocol）サーバ,インターネットを介してファイルの転送を行う。クライアントはFTPクライアントソフトウェアを使用して、サーバに接続し、ファイルのアップロードやダウンロードを行う。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ファイルサーバ,ネットワーク上の複数のクライアントが共有できるファイルやデータを格納する。クライアントはネットワーク経由でファイルサーバにアクセスし、ファイルの保存、読み取り、編集、削除などの操作を行うことができる。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+仮想化（Virtualization）,物理的なハードウェアリソースを複数の仮想環境に分割し、それぞれの環境が独立したコンピュータシステムとして機能するようにする技術,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ハイパーバイザー（Hypervisor）,物理的なハードウェア上で直接実行され、仮想サーバの作成、実行、管理を行うソフトウェアまたはファームウェア。ホストサーバのリソース（CPU、メモリ、ストレージなど）を仮想サーバ間で分割し、各仮想サーバが独立した環境で動作するように制御する,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+KVM（Kernel-based Virtual Machine）,Linuxカーネルに組み込まれたオープンソースの仮想化技術。KVMを使用すると、Linuxオペレーティングシステムをハイパーバイザーとして機能させることができ、物理サーバ上に複数の仮想サーバを実行が可能,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ライブマイグレーション機能,動作中の仮想サーバをほぼ停止させることなく別のホストへと移す機能。メンテナンスのときなど、計画的に仮想サーバを移動させたいときに用いられる,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+HA機能,仮想サーバが動いているホストサーバに障害が発生したとき、自動的に別のホストサーバに切り替える機能。手動ではなく自動でサーバを切り替える他、一時的に仮想サーバがダウンするが、ホストサーバの復旧を待つことなく数分で仮想サーバを再起動できる,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+コンテナ,アプリケーションとその依存関係をパッケージ化し、環境から隔離された形で実行する技術,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+Namespaces（名前空間）,プロセス（実行中のプログラム）に対してリソースの隔離を提供するLinuxカーネルの機能,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+Cgroups (Control Groups),プロセス群に対するリソースの使用量（CPU、メモリ、ディスクI/Oなど）を監視、制限するためのLinuxカーネルの機能,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+Docker,プロセスを簡単にコンテナ化（isolate）し、簡単かつ素早く開発・移動・実行できるオープンなプラットフォーム,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+Kubernetes,コンテナ化されたアプリケーションのデプロイメント、スケーリング、管理を自動化するためのオープンソースのコンテナオーケストレーションシステム,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+クラウドネイティブ,現代のソフトウェア開発と運用のアプローチで、アプリケーションやサービスをクラウド環境で最大限に活用するために設計された技術や方法論の集合,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+コンテナ,アプリケーションとその実行に必要なライブラリ、依存関係を一つにパッケージ化する技術,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+サービスメッシュ,マイクロサービス間の通信を制御し、監視するための専用のインフラ,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+マイクロサービス,小さなサービスを組み合わせて、一つのアプリケーションを開発する,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+イミュータブルインフラストラクチャ,一度デプロイされたら変更されないインフラストラクチャのアプローチ,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+宣言型API,アプリケーションやインフラストラクチャの望ましい状態を「宣言」する方法,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.2_Computer.pdf
+ネットワーク(コンピュータネットワーク),コンピュータなどの複数のデバイス同士でデータをやりとりするために、それらがケーブルや電波を介して相互に繋がっている状態、その技術,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+LAN (Local Area Network),家庭などの限定された範囲で接続できる小規模なネットワーク,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+WAN (Wide Area Network),地理的に広範囲な領域で複数のLANや都市、国などを結ぶネットワーク,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+インターネット,世界中の複数のネットワークがTCP/IPという共通プロトコルで相互接続されて構成される巨大なネットワーク,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+イントラネット,組織や企業内で利用されるプライベートなネットワーク,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+スイッチ,イーサネット規格LAN内の機器同士をつないでデータを転送,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ルータ,異なるネットワーク間でデータを転送,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ロードバランサ,主にウェブサーバに対するアクセスを振り分け、負荷を分散,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ファイアウォール,通信を監視し、不正なアクセスをブロック,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+UTM (統合脅威管理：Unified Threat Management),1台に複数のセキュリティ機能がまとまっている,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+LAN （Local Area Network）,通常の家庭のネットワークはLAN,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+WAN （Wide Area Network）,大規模なインフラを用いたネットワーク,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+IPアドレス,コンピュータの住所を表したもの,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+プライベートIPアドレス(ローカルIPアドレス),LAN内で使われているIPアドレス,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+グローバルIPアドレス,インターネット上で使われているIPアドレス,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+MACアドレス,機器の番号,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+サブネットマスク,IPアドレスのネットワーク部とホスト部を識別する,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+CIDR,クラスフルアドレッシングを使いやすくしたもの,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+CIDR表記,サブネットマスクを利用せず表記したもの,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ポート番号,個別のサービスを特定することができる,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ルータ (L3スイッチ),異なるネットワークとの接続を行うためのハードウェア,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ゲートウェイ,異なるプロトコルを変換する機能,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ルーティング,ルーティングテーブルに基づきルーティングを行いルートを決定,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+スタティックルーティング,ネットワークの管理者が手動で設定した通信経路,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ダイナミックルーティング,ネットワークの経路が自動的に更新される通信手段,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+NAT （Network Address Translation）,グローバルIPアドレスとプライベートIPアドレスの変換を行う。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+NAPT (Network Address Port Translation) 、IPマスカレード,グローバルIPアドレスとプライベートIPアドレスに加え、ポート番号の変換を行う。,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+スタティックNAT,1対1の固定で変換（マッピング）(グローバルIPの数だけ接続),さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ダイナミックNAT,多数対多数で変換,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+通信プロトコル,通信を行う際の「ルール（決まりごと）」,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+OSI参照モデル,通信プロセスを7層構造で説明したもの,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+データリンク層,デバイス間のデータ転送,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+物理層,物理的な接続とビットの送受信,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+トランスポート層,通信の速度や正確性を管理,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ネットワーク層,異なるネットワーク間の通信,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+アプリケーション層,ソフトウェアごとに通信手順の定義,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+プレゼンテーション層,コンピュータとネットワークのデータ変換を定義,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+セッション層,通信の一連のプロセスを定義,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+インターネット,世界中のネットワークが相互に接続され、世界全体にまで広がったネットワーク,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ISP (Internet Service Provider),インターネットに接続するためのサービスを提供する事業者,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+IX (Internet Exchange),複数のISPをはじめとしたネットワークが相互接続する専用設備,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+データセンター,サーバなどのIT機器を保管、管理、運用するために設計された施設,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+バックボーン,ネットワークにおける主要な通信経路や中枢部分を指す,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+DNS (Domain Name System),IPアドレスとドメイン名とを相互に変換するシステム,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+権威DNSサーバ,IPアドレスとドメイン名との変換を、自身の持つIPアドレスとドメイン名の対応づけ情報のみに基づいて行う,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+キャッシュDNSサーバ,クライアントから問い合わせを受けるとインターネットを通じてそのゾーンを管理する権威DNSサーバに問い合わせ、該当する答えを受け取り、クライアントに返す,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+URL (Uniform Resource Locator),ドメイン名とその配下にあるファイルの場所を示す文字列,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ドメイン名,インターネットにおける住所、URLに含まれる,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf
+ホスト名(サブドメイン),ホスト(サーバ)の識別に用いる,さくらのクラウド検定オンライン教材,https://code4fukui.github.io/SakuraCloudCertificationStudyMaterial/1.3_Network.pdf

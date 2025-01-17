@@ -30,7 +30,7 @@ import { rnd } from "https://js.sabae.cc/rnd.js";
 intext.disabled = true;
 intext.value = "loading...";
 //const fn = "ipsj-words-ver.1.0_2024-4-10.csv";
-const fn = "./it-words.csv?";
+const fn = "./it-words.csv";
 const cache = await IndexedCache.create(fn, 1);
 const bin = await cache.fetchOrLoad(fn);
 const data = CSV.parse(new TextDecoder().decode(bin));
