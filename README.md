@@ -1,11 +1,16 @@
 # it-words
 
-- [it-words.csv](it-words.txt)
+A collection of IT-related words and definitions, with sample application.
 
-## サンプルアプリ
+## Demo
+[IT Dictionary](https://code4fukui.github.io/it-words/)
 
-- [IT辞書](https://code4fukui.github.io/it-words/)
+## Features
+- IT term dictionary
+- Includes terms from various sources
 
-## 出典
+## Data
+The data is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), sourced from the [さくらのクラウド検定オンライン教材](https://github.com/code4fukui/SakuraCloudCertificationStudyMaterial) slides (1-3) created by Sakura Internet Inc.
 
-- [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) [さくらのクラウド検定オンライン教材](https://github.com/code4fukui/SakuraCloudCertificationStudyMaterial) さくらインターネット株式会社制作のスライド（1〜3）より
+## License
+MIT
