@@ -1,6 +1,6 @@
 # IT用語集
 
-IT用語を検索・閲覧できるアプリケーションです。主な機能として、キーワード検索、ランダムな用語表示などを備えています。このリポジトリには、IT用語のデータファイルと、そのデータを利用したサンプルアプリが含まれています。
+このリポジトリは、IT用語を検索・閲覧できるアプリケーションを提供しています。主な機能としては、キーワード検索、ランダムな用語表示などがあります。リポジトリには、IT用語のデータファイルと、そのデータを利用したサンプルアプリが含まれています。
 
 ## デモ
 [IT辞書](https://code4fukui.github.io/it-words/)
@@ -10,8 +10,8 @@ IT用語を検索・閲覧できるアプリケーションです。主な機能
 - ランダムな用語表示
 
 ## データ
-- [it-words.csv](it-words.txt)
+このプロジェクトのデータは、[さくらのクラウド検定オンライン教材](https://github.com/code4fukui/SakuraCloudCertificationStudyMaterial)のスライド(1-3)から取得されています。データは[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)ライセンスの下で公開されています。
 
 ## ライセンス
-- データ: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) [さくらのクラウド検定オンライン教材](https://github.com/code4fukui/SakuraCloudCertificationStudyMaterial)より
+- データ: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
 - アプリ: MIT
